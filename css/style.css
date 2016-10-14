@@ -1,0 +1,452 @@
+@font-face {
+  font-family: "brandon";
+  font-weight: bold;
+  src: url("../fonts/Brandon_bld.otf");
+}
+@font-face {
+  font-family: "brandon";
+  src: url("../fonts/Brandon_reg.otf");
+}
+@font-face {
+  font-family: "Sentinel";
+  src: url("../fonts/Sentinel-Book.otf");
+}
+@font-face {
+  font-family: "Sentinel";
+  font-weight: bold;
+  src: url("../fonts/Sentinel-Bold.otf");
+}
+@font-face {
+  font-family: "Sentinel";
+  font-weight: bold;
+  src: url("../fonts/Sentinel-Bold.otf");
+}
+@font-face {
+  font-family: "Sentinel";
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/Sentinel-BoldItalic.otf");
+}
+
+
+
+body {
+  font: 14pt/1.5 sentinel;
+}
+
+
+a {
+  border-bottom: 1px solid;
+  color: #000;
+  font-weight: bold;
+}
+a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
+#shapes * {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: -13337px;
+  left: -13337px;
+}
+#background {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+#background:after {
+  content: "";
+  position: fixed;
+  background: rgba(255,255,255,0.2);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+section.container h2 {
+  font-family: brandon;
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: 50px;
+}
+section.container h3 {
+  font-family: brandon;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+section.quote {
+    margin: 200px auto;
+}
+
+section.quote img {
+  max-height: 200px;
+}
+
+section.quote p {
+    font-size: 1.4em;
+    text-align: center;
+}
+section.quote i {
+  font-family: brandon;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.jumbotron {
+  background: none;
+  text-align: center;
+  font-family: brandon;
+}
+.jumbotron .logo {
+  width: 200px;
+  height: 200px;
+  background: url("../img/Logo.png") no-repeat center / contain;
+  margin: 50px auto;
+}
+
+.jumbotron h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5em;
+  padding-left: 0.5em;
+}
+
+.jumbotron .subtitle {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.jumbotron .btn {
+  background: none;
+  border: 4px solid;
+  width: 230px;
+  padding: 12px;
+  margin: 30px auto;
+  display: block;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: all 200ms ease-in-out;
+}
+.jumbotron .btn:hover {
+  background: #000;
+  color: #FFF;
+  border-color: #000;
+}
+.jumbotron .btn:focus {
+  outline: none;
+}
+nav.navbar {
+  padding: 30px 40px;
+  border: none;
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+}
+nav ul.nav {
+  font: 1.2em/1 brandon;
+  color: #000;
+}
+.nav>li>a {
+  padding: 8px 0;
+  margin: 0 20px;
+  font-weight: bold;
+  background: none !important;
+  border-bottom: 5px solid transparent;
+  transition: all 200ms ease-in-out;
+}
+.nav:hover>li.active>a {
+  border-bottom: 5px solid transparent;
+}
+.nav>li>a:hover, .nav>li>a:visited {
+  background: none;
+  border-bottom: 5px solid #FDDB00;
+  border-radius: 0;
+  color: #000;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background: none;
+  color: #000;
+  border-bottom: 5px solid #FDDB00;
+  border-radius: 0;
+}
+.nav>li>a.blog:hover {
+  border-bottom: 5px solid #00D6C9;
+}
+
+
+#faq .question:nth-child(even) {
+  margin-bottom: 70px;
+  float: left;
+}
+
+#faq .question:nth-child(odd) {
+  margin-top: 70px;
+  float: right;
+}
+
+
+#faq .question:after, #judges .judge:after {
+  content: "";
+  width: 80px;
+  position: absolute;
+  bottom: 100%;
+  border-bottom: 5px solid;
+}
+#judges .judge:after {
+  left: 15px;
+  top: 15px;
+  width: 80px;
+}
+
+/*FAQ & Judges Colors!*/
+#faq .question:nth-child(5n+0):after, #judges .judge:nth-child(5n+0):after {
+  border-bottom-color: #EE586E;
+}
+#faq .question:nth-child(5n+1):after, #judges .judge:nth-child(5n+1):after {
+  border-bottom-color: #38C555;
+}
+#faq .question:nth-child(5n+2):after, #judges .judge:nth-child(5n+2):after {
+  border-bottom-color: #1ED5C8;
+}
+#faq .question:nth-child(5n+3):after, #judges .judge:nth-child(5n+3):after {
+  border-bottom-color: #FF9CA8;
+}
+#faq .question:nth-child(5n+4):after, #judges .judge:nth-child(5n+4):after {
+  border-bottom-color: #18A8DE;
+}
+
+
+
+
+#sponsors a {
+  border-bottom: none;
+}
+#sponsors img {
+  margin: 20px;
+  max-height: 100px;
+  filter: none;
+  -webkit-filter: grayscale(100%);
+  -moz-filter:    grayscale(100%);
+  -ms-filter:     grayscale(100%);
+  -o-filter:      grayscale(100%);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+#sponsors .partner img {
+  max-height: 150px;
+}
+#sponsors .row {
+  margin-bottom: 50px;
+}
+#sponsors .gold img {
+  max-height: 120px;
+  max-width: 25%;
+  filter: none;
+  -webkit-filter: grayscale(100%);
+  -moz-filter:    grayscale(100%);
+  -ms-filter:     grayscale(100%);
+  -o-filter:      grayscale(100%);
+}
+#sponsors .silver img {
+  opacity: 0.4;
+  max-height: 90px;
+}
+#sponsors .trench img {
+  max-height: 60px;
+  max-width: 20%;
+  opacity: 0.4;
+}
+#sponsors h3 {
+  color: #666;
+  border-bottom: 4px solid;
+  line-height: 60px;
+  display: inline-block;
+  text-align: center;
+}
+#sponsors .filler {
+  margin: 120px 0;
+  color: #ddd;
+}
+#sponsors img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  -moz-filter:    grayscale(0%);
+  -ms-filter:     grayscale(0%);
+  -o-filter:      grayscale(0%);
+  opacity: 1;
+}
+#sponsors .you {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  vertical-align: middle;
+  font-weight: normal;
+  background: none;
+  border: 2px dashed;
+  display: inline-block;
+  font-family: "Brandon";
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.2;
+  opacity: 0.4;
+  transition: all 100ms ease-in-out;
+}
+#sponsors .you span {
+  display: block;
+  font-size: 2em;
+  font-family: "Brandon";
+  font-style: italic;
+  font-weight: bold;
+}
+#sponsors .you:hover {
+  opacity: 1;
+}
+#sponsorship {
+  padding-top: 100px;
+}
+#sponsorship .btn {
+  background: none;
+  border: 4px solid;
+  width: 230px;
+  padding: 12px;
+  margin: 20px 0;
+  margin-top: 40px;
+  display: block;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2em;
+  transition: all .2s ease-in-out;
+}
+#sponsorship form {
+  font-family: "Brandon";
+  margin-bottom: 40px;
+}
+#sponsorship .btn:hover {
+  background: #000;
+  color: #FFF;
+  border-color: #000;
+}
+#sponsorship input {
+  width: 100%;
+  padding:5px 10px;
+  border: 4px solid;
+  font-size: 1.2em;
+}
+#sponsorship input:focus {
+  outline: none;
+}
+#sponsorship img {
+  width: 100%;
+  border: 1px solid #FDDB00;
+  border-left-width: 20px;
+}
+
+#sponsors label {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.2em;
+  &.left {
+    float: left;
+    margin: 0;
+    margin-right: 50px;
+  }
+}
+#sponsorship > div {
+  margin-bottom: 40px;
+}
+#sponsorship h3 {
+  font-size: 1.6em;
+  font-family: sentinel;
+  font-style: italic;
+}
+#sponsorship .say {
+  margin-top: 100px;
+}
+#sponsorship iframe {
+  margin: 30px 0;
+  border: none;
+}
+
+
+#judges img {
+  height: 180px;
+  margin: auto;
+  display: block;
+}
+#judges h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  margin-top: 30px;
+}
+#judges h4 {
+  font-size: 5em;
+}
+#judges .row {
+  margin-bottom: 50px;
+}
+#judges .more {
+  display: block;
+  margin-top: 40px;
+  font-size: 1.2em;
+}
+
+
+#contact p {
+  margin-bottom: 30px;
+}
+#contact h3 {
+  margin-top: 60px;
+  font-size: 2em;
+  font-family: sentinel;
+  font-style: italic;
+}
+
+
+footer {
+  margin-top: 200px;
+}
+footer li {
+  float: right;
+  list-style: none;
+}
+footer li a {
+  border-bottom: none;
+  margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+  section.quote img {
+    width: 100%;
+  }
+  section.quote {
+    margin: 100px auto;
+  }
+  .jumbotron .logo {
+    margin: 30px auto !important;
+  }
+  .jumbotron h1 {
+    margin-bottom: 10px !important;
+    font-size: 1.7em !important;
+  }
+  #faq .question {
+    margin: 10px auto !important;
+    float: left !important;
+  }
+  #judges .judge:after {
+    display: none;
+  }
+  #judges .judge {
+    text-align: center;
+  }
+}
